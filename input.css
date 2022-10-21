@@ -6,16 +6,21 @@
 	.day {
 		@apply flex flex-col justify-end h-full items-center;
 	}
-
 	.day div {
 		@apply w-8 rounded;
+	}
+	.legend {
+		@apply bg-dark-brown text-cream font-bold rounded text-sm w-12 flex justify-center items-center py-1;
 	}
 }
 
 @layer utilities {
 	@screen desktop {
 		.day div {
-			@apply w-12;
+			@apply w-12 hover:cursor-pointer hover:bg-[#faa290];
+		}
+		.current-day {
+			@apply hover:bg-[#b4ecf1];
 		}
 	}
 }

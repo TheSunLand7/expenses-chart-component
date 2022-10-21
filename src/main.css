@@ -523,8 +523,29 @@ video {
   border-radius: 0.25rem;
 }
 
+.legend {
+  display: flex;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(25 47% 15% / var(--tw-bg-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(27 66% 92% / var(--tw-text-opacity));
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-screen {
@@ -697,6 +718,17 @@ video {
 @media (min-width: 1440px) {
   .day div {
     width: 3rem;
+  }
+
+  .day div:hover {
+    cursor: pointer;
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 162 144 / var(--tw-bg-opacity));
+  }
+
+  .current-day:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(180 236 241 / var(--tw-bg-opacity));
   }
 
   .desktop\:h-\[300px\] {

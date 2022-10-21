@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://gitlab.com/xiayudev/interactive-card-form)
+- Solution URL: [Github](https://github.com/TheSunLand7/expenses-chart-component)
 - Live Site URL: [Netlify](https://interactive-form-mentor.netlify.app/)
 
 ## My process
