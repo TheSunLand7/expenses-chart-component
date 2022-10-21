@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "tw:dev": "npx tailwindcss -i input.css -o ./src/main.css --watch",
+    "tw:dev": "npx tailwindcss -i ./input.css -o ./src/main.css --watch",
     "preview": "vite preview"
   },
   "devDependencies": {

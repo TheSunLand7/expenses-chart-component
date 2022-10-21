@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" sizes="32x32" type="image/png" href="/images/favicon-32x32.png" />
-
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/style.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +13,67 @@
     <title>Frontend Mentor | Expenses Chart Component</title>
   </head>
   <body>
-    <main class="font-dm-sans">
-      <div></div>
+    <main class="font-dm-sans w-full h-screen">
+      <div class="w-full h-full bg-cream px-4 flex justify-center items-center">
+        <section class="w-full h-auto space-y-4">
+          <div class="bg-soft-red flex justify-between p-4 rounded-xl">
+            <div class="flex flex-col space-y-1">
+              <span class="text-cream">My Balance</span>
+              <span class="text-very-pale-orange text-2xl font-bold">$921.48</span>
+            </div>
+            <div>
+              <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+            </div>
+          </div>
+          <div class="bg-very-pale-orange rounded-xl p-4">
+            <div>
+              <h1 class="text-dark-brown text-2xl font-bold">Spending - Last 7 days</h1>
+              <!--Chart-->
+              <div class="w-full border-b border-b-cream flex h-[300px] justify-between items-end pb-4 text-xs text-medium-brown">
+                <div class="day space-y-2">
+                  <div class="font-bold text-dark-brown">$15.38</div>
+                  <div class="bg-soft-red"></div>
+                  <span>mon</span>
+                </div>
+                <div class="day space-y-2">
+                  <div class="bg-soft-red"></div>
+                  <span>tue</span>
+                </div>
+                <div class="day space-y-2">
+                  <div class="bg-cyan"></div>
+                  <span>wed</span>
+                </div>
+                <div class="day space-y-2">
+                  <div class="bg-soft-red"></div>
+                  <span>thu</span>
+                </div>
+                <div class="day space-y-2">
+                  <div class="bg-soft-red"></div>
+                  <span>fri</span>
+                </div>
+                <div class="day space-y-2">
+                  <div class="bg-soft-red"></div>
+                  <span>sat</span>
+                </div>
+                <div class="day space-y-2">
+                  <div class="bg-soft-red"></div>
+                  <span>sun</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="py-4 flex flex-col">
+                <span class="text-medium-brown leading-8">Total this month</span>
+                <span class="text-3xl text-dark-brown font-bold">$478.33</span>
+              </div>
+              <div class="flex flex-col justify-end py-4">
+                <span class="font-bold text-end text-dark-brown leading-3">+2.4%</span>
+                <span class="text-medium-brown">from last month</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <!--Typescript-->
     <script type="module" src="/src/main.ts"></script>
