@@ -1,6 +1,7 @@
 import "./style.css";
 import data from "./data.json";
 
+/** ### DOM ### */
 const $dayShort = document.querySelectorAll(".day span") as NodeListOf<HTMLSpanElement>,
 	$bar = document.querySelectorAll(".day div");
 
@@ -15,6 +16,8 @@ const showChart = () => {
 		sibling.style.height = `${data[index].amount}%`;
 	});
 	$dayLong.style.backgroundColor = "var(--cyan)";
+
+	/** Improve this part */
 	$dayLong.addEventListener("mouseover", () => {
 		$dayLong.style.backgroundColor = "#b4ecf1";
 	});
