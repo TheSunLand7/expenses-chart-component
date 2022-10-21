@@ -1,5 +1,5 @@
-import data from "./data.json";
 import "./style.css";
+import data from "./data.json";
 
 const $dayShort = document.querySelectorAll(".day span") as NodeListOf<HTMLSpanElement>,
 	$bar = document.querySelectorAll(".day div");

@@ -726,11 +726,6 @@ video {
     background-color: rgb(250 162 144 / var(--tw-bg-opacity));
   }
 
-  .current-day:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(180 236 241 / var(--tw-bg-opacity));
-  }
-
   .desktop\:h-\[300px\] {
     height: 300px;
   }

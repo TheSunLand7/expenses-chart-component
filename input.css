@@ -19,8 +19,5 @@
 		.day div {
 			@apply w-12 hover:cursor-pointer hover:bg-[#faa290];
 		}
-		.current-day {
-			@apply hover:bg-[#b4ecf1];
-		}
 	}
 }

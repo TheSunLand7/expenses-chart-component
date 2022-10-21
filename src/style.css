@@ -6,16 +6,3 @@
 	--cream: #f8e9dd;
 	--very-pale-orange: #fffaf5;
 }
-
-/* Move to input.css
-.day {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-	height: 100%;
-}
-.day div {
-	width: 32px;
-	border-radius: 4px;
-}*/
