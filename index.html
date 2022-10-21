@@ -15,60 +15,59 @@
   <body>
     <main class="font-dm-sans w-full h-screen">
       <div class="w-full h-full bg-cream px-4 flex justify-center items-center">
-        <section class="w-full h-auto space-y-4">
-          <div class="bg-soft-red flex justify-between p-4 rounded-xl">
+        <section class="w-full h-auto space-y-4 max-w-[500px]">
+          <div class="bg-soft-red flex justify-between p-4 rounded-xl desktop:p-8">
             <div class="flex flex-col space-y-1">
-              <span class="text-cream">My Balance</span>
-              <span class="text-very-pale-orange text-2xl font-bold">$921.48</span>
+              <span class="text-cream desktop:text-lg">My Balance</span>
+              <span class="text-very-pale-orange text-2xl font-bold desktop:text-3xl">$921.48</span>
             </div>
             <div>
               <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
             </div>
           </div>
-          <div class="bg-very-pale-orange rounded-xl p-4">
+          <div class="bg-very-pale-orange rounded-xl p-4 desktop:p-8">
             <div>
-              <h1 class="text-dark-brown text-2xl font-bold">Spending - Last 7 days</h1>
+              <h1 class="text-dark-brown text-2xl font-bold desktop:text-3xl">Spending - Last 7 days</h1>
               <!--Chart-->
-              <div class="w-full border-b border-b-cream flex h-[300px] justify-between items-end pb-4 text-xs text-medium-brown">
+              <div class="w-full border-b border-b-cream flex h-[250px] justify-between items-end pb-4 text-xs text-medium-brown desktop:text-sm desktop:pb-8 desktop:h-[300px]">
                 <div class="day space-y-2">
-                  <div class="font-bold text-dark-brown">$15.38</div>
                   <div class="bg-soft-red"></div>
-                  <span>mon</span>
+                  <span id="monday">mon</span>
                 </div>
                 <div class="day space-y-2">
                   <div class="bg-soft-red"></div>
-                  <span>tue</span>
-                </div>
-                <div class="day space-y-2">
-                  <div class="bg-cyan"></div>
-                  <span>wed</span>
+                  <span id="tuesday">tue</span>
                 </div>
                 <div class="day space-y-2">
                   <div class="bg-soft-red"></div>
-                  <span>thu</span>
+                  <span id="wednesday">wed</span>
                 </div>
                 <div class="day space-y-2">
                   <div class="bg-soft-red"></div>
-                  <span>fri</span>
+                  <span id="thursday">thu</span>
                 </div>
                 <div class="day space-y-2">
                   <div class="bg-soft-red"></div>
-                  <span>sat</span>
+                  <span id="friday">fri</span>
                 </div>
                 <div class="day space-y-2">
                   <div class="bg-soft-red"></div>
-                  <span>sun</span>
+                  <span id="saturday">sat</span>
+                </div>
+                <div class="day space-y-2">
+                  <div class="bg-soft-red"></div>
+                  <span id="sunday">sun</span>
                 </div>
               </div>
             </div>
             <div class="flex justify-between">
               <div class="py-4 flex flex-col">
-                <span class="text-medium-brown leading-8">Total this month</span>
-                <span class="text-3xl text-dark-brown font-bold">$478.33</span>
+                <span class="text-medium-brown leading-8 desktop:text-base desktop:leading-10">Total this month</span>
+                <span class="text-3xl text-dark-brown font-bold desktop:text-5xl">$478.33</span>
               </div>
               <div class="flex flex-col justify-end py-4">
-                <span class="font-bold text-end text-dark-brown leading-3">+2.4%</span>
-                <span class="text-medium-brown">from last month</span>
+                <span class="font-bold text-end text-dark-brown leading-3 desktop:text-base">+2.4%</span>
+                <span class="text-medium-brown desktop:text-base">from last month</span>
               </div>
             </div>
           </div>

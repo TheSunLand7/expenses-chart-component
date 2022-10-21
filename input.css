@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.day {
+		@apply flex flex-col justify-end h-full items-center;
+	}
+
+	.day div {
+		@apply w-8 rounded;
+	}
+}
+
+@layer utilities {
+	@screen desktop {
+		.day div {
+			@apply w-12;
+		}
+	}
+}
